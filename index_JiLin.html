@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>吉林冬季小众自驾攻略</title>
+    <style>
+        /* 响应式布局 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 地图容器 */
+        #mapContainer {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+        }
+
+        /* 预算图表容器 */
+        #budgetChart {
+            width: 600px;
+            height: 400px;
+            float: left;
+            margin-right: 30px;
+        }
+
+        /* 内容区域 */
+        .content {
+            float: right;
+            width: 500px;
+            margin-bottom: 30px;
+        }
+
+        /* 景点卡片 */
+        .placeCard {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .content {
+                float: none;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            #budgetChart {
+                width: 100%;
+                float: none;
+                margin: 0 auto 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>吉林冬季小众自驾攻略</h1>
+        <div id="mapContainer"></div>
+        <div id="budgetChart"></div>
+        <div class="content">
+            <h2>行程概览</h2>
+            <div id="routeSummary"></div>
+            <h2>景点详情</h2>
+            <div id="placeDetails"></div>
+            <h2>徒步路线选择</h2>
+            <div id="hikingRouteSelector"></div>
+            <div id="hikingRouteInfo"></div>
+        </div>
+    </div>
+
+    <!-- 引入高德地图API -->
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=您的高德API密钥&plugin=AMap.Driving,AMap infowindow"></script>
+    <!-- 引入ECharts -->
+    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.0/echarts.min.js"></script>
+    <!-- 引入通义千问代码 -->
+    <script>
+        // 通义千问生成的代码将在此处添加
+    </script>
+</body>
+</html>
